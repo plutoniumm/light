@@ -1,12 +1,12 @@
 import { LitElement, html, css } from 'lit';
 
 /*
-<light-split ratios="1:1" {vertical}>
+<light-split ratios="1:1" {vertical} {disabled}>
   <div slot="left">Left</div>
   <div slot="right">Right</div>
 </light-split>
 */
-class SplitComponent extends LitElement {
+class Split extends LitElement {
   dragging: boolean = false;
   vertical: boolean = false;
   startX: number = 0;
@@ -63,6 +63,10 @@ class SplitComponent extends LitElement {
       height: 3px;
       padding: 1px 10px;
     }
+
+    :host([disabled]) .split-bar {
+      pointer-events: none;
+    }
   `;
 
   firstUpdated () {
@@ -81,18 +85,18 @@ class SplitComponent extends LitElement {
   render () {
     return html`
       <div class="splitc splitl">
-        <slot name="left"></slot>
+        <slot name="a"></slot>
       </div>
       <div class="split-bar" draggable @mousedown=${this.startDrag}>
         <div class="hr"></div>
       </div>
       <div class="splitc splitr">
-        <slot name="right"></slot>
+        <slot name="b"></slot>
       </div>
     `;
   }
 
-  startDrag (e) {
+  startDrag (e: any) {
     if (!this.left || !this.right) return;
     if (this.hasAttribute('disabled')) return;
 
@@ -115,7 +119,7 @@ class SplitComponent extends LitElement {
     document.addEventListener('mouseup', this.stopDrag);
   }
 
-  drag = (e) => {
+  drag = (e: any) => {
     if (!this.left || !this.right) return;
     if (this.dragging) {
       let newWidth;
@@ -139,4 +143,4 @@ class SplitComponent extends LitElement {
   };
 }
 
-customElements.define('light-split', SplitComponent);
+customElements.define('light-split', Split);

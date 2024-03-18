@@ -1,0 +1,10 @@
+#!/bin/bash
+rm -rf dist/*.js;
+tsc;
+# dist/*.js - esbuild *.min.js
+for file in dist/*.js; do
+  file=$(basename $file | sed 's/\.js//g')
+  esbuild dist/$file.js --bundle --minify --outfile=dist/$file.min.js;
+  rm dist/$file.js;
+  mv dist/$file.min.js dist/$file.js;
+done

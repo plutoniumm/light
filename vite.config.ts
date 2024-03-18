@@ -6,5 +6,5 @@ export default defineConfig({
       allow: ['.'],
     },
     port: 3000,
-  },
+  }
 });
