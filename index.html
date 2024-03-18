@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    light-split {
+      border: 1px solid #888;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <light-split disabled ratio="0.4:0.6" style="border-radius: 10px;">
+    <div slot="left">
+      <h1>Left</h1>
+    </div>
+    <div slot="right">
+      <h1>Right</h1>
+    </div>
+  </light-split>
+
+  <br />
+
+  <light-split vertical ratio="0.6:0.4" style="height: 300px;">
+    <div slot="left">
+      <h1>Left</h1>
+    </div>
+    <div slot="right">
+      <h1>Right</h1>
+    </div>
+  </light-split>
+
+  <script type="module" src="split.ts"></script>
+</body>
+
+</html>
