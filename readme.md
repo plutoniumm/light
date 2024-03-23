@@ -11,24 +11,36 @@ sensible lit components
 ### split
 ```html
 <!-- default ratio is horizontal 1:1 -->
-<light-split disabled>
+<lt-split disabled>
   <!-- disabled prevents resizing -->
   <div slot="a">1</div>
   <div slot="b">2</div>
-</light-split>
+</lt-split>
 
 <!-- custom ratio -->
-<light-split vertical ratio="1:2">
+<lt-split vertical ratio="1:2">
   <div slot="a">1</div>
   <div slot="b">2</div>
-</light-split>
+</lt-split>
 ```
 
 ### chip
 ```html
-<light-chip>chip</light-chip>
+<lt-chip>chip</lt-chip>
 
 <!-- bg col and smaller -->
-<light-chip bg="#f00" scale="0.5">chip</light-chip>
+<lt-chip bg="#f00" scale="0.5">chip</lt-chip>
 <!-- bg can only be hex or rgb -->
+```
+
+### Tex
+```html
+<lt-tex>\int_0^1 x^2 dx</lt-tex>
+
+<lt-tex display>
+\begin{bmatrix}
+  1 & 2 \\
+  3 & 4
+\end{bmatrix}
+</lt-tex>
 ```

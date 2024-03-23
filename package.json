@@ -1,11 +1,15 @@
 {
+	"name": "light",
+	"version": "0.1.0",
 	"type": "module",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "./build",
-		"deploy": "gh-pages -b dist -d dist -t true"
+		"deploy": "gh-pages -b dist -d dist -t true",
+		"postdeploy": "rm -rf dist"
 	},
 	"dependencies": {
+		"@types/katex": "^0.16.7",
 		"katex": "^0.16.9",
 		"lit": "^3.1.2",
 		"vite": "^5.1.6"

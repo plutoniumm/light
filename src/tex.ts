@@ -1,12 +1,11 @@
 import { LitElement, html, css } from 'lit';
 import katex from 'katex';
-import { PREFIX } from './config.js';
+const PREFIX = "lt";
 
 /*
-<light-split ratios="1:1" {vertical} {disabled}>
-  <div slot="left">Left</div>
-  <div slot="right">Right</div>
-</light-split>
+<lt-tex display>
+  \int_0^\infty e^{-x^2} dx = \frac{\sqrt{\pi}}{2}
+</lt-tex>
 */
 class Tex extends LitElement {
   static styles = css`
@@ -29,7 +28,7 @@ class Tex extends LitElement {
   firstUpdated () {
     let displayMode = this.hasAttribute('display');
 
-    const cont = this.shadowRoot?.querySelector('.tex');
+    const cont = this.shadowRoot?.querySelector('.tex') as HTMLElement;
     const text = this.innerText;
     console.log(text);
     if (!text) return;

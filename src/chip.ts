@@ -1,11 +1,8 @@
 import { LitElement, html, css } from 'lit';
-import { PREFIX } from './config.js';
+const PREFIX = "lt";
 
 /*
-<light-split ratios="1:1" {vertical} {disabled}>
-  <div slot="left">Left</div>
-  <div slot="right">Right</div>
-</light-split>
+<lt-chip bg="#f00" scale="1.5">
 */
 class Chip extends LitElement {
   static styles = css`
