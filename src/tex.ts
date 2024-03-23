@@ -30,14 +30,11 @@ class Tex extends LitElement {
 
     const cont = this.shadowRoot?.querySelector('.tex') as HTMLElement;
     const text = this.innerText;
-    console.log(text);
     if (!text) return;
     if (text) {
       katex.render(text, cont, {
         displayMode, throwOnError: false
       });
-      // console.log(str);
-      // text.innerHTML = str;
     }
   }
 }

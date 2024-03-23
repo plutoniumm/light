@@ -6,7 +6,7 @@ Small sensible lit components made for one off uses.
 
 ## Include
 ```html
-<script async src="https://manav.ch/r/dist:light?<NAME>.js"></script>
+<script async src="https://manav.ch/r/dist:light?load.js"></script>
 <!-- example: chip.js or split.js -->
 ```
 
