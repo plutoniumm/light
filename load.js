@@ -1,0 +1,1 @@
+"use strict";(()=>{var c=document.querySelectorAll("lt-tex, lt-chip, lt-split"),n=[];for(let t=0;t<c.length;t++){let e=c[t].tagName.toLowerCase().split("-")[1];if(n.includes(e))continue;let s=document.createElement("script");s.setAttribute("async",""),s.src=`https://manav.ch/r/dist:light?${e}.js`,document.head.appendChild(s),n.push(e)}})();

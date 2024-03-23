@@ -265,7 +265,7 @@ l0,-`+(t+144)+`c-2,-159.3,-10,-310.7,-24,-454c-53.3,-528,-210,-949.7,
       <div class="tex">
       <slot></slot>
       </div>
-    `}firstUpdated(){var e;let t=this.hasAttribute("display"),a=(e=this.shadowRoot)===null||e===void 0?void 0:e.querySelector(".tex"),i=this.innerText;console.log(i),i&&i&&d1.render(i,a,{displayMode:t,throwOnError:!1})}};ft.styles=wt`
+    `}firstUpdated(){var e;let t=this.hasAttribute("display"),a=(e=this.shadowRoot)===null||e===void 0?void 0:e.querySelector(".tex"),i=this.innerText;i&&i&&d1.render(i,a,{displayMode:t,throwOnError:!1})}};ft.styles=wt`
     :host {
       display: inline-block;
       cursor: pointer;
