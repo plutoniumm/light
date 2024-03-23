@@ -1,4 +1,5 @@
 import { LitElement, html, css } from 'lit';
+import { PREFIX } from './config.js';
 
 /*
 <light-split ratios="1:1" {vertical} {disabled}>
@@ -101,4 +102,4 @@ class Chip extends LitElement {
   }
 }
 
-customElements.define('light-chip', Chip);
+customElements.define(`${PREFIX}-chip`, Chip);

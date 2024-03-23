@@ -1,4 +1,5 @@
 import { LitElement, html, css } from 'lit';
+import { PREFIX } from './config.js';
 
 /*
 <light-split ratios="1:1" {vertical} {disabled}>
@@ -143,4 +144,4 @@ class Split extends LitElement {
   };
 }
 
-customElements.define('light-split', Split);
+customElements.define(`${PREFIX}-split`, Split);
