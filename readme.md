@@ -1,10 +1,12 @@
 ## light
 
-sensible lit components
+<img src="./icon.svg" width="50" height="50" align="right" />
+
+Small sensible lit components made for one off uses.
 
 ## Include
 ```html
-<script type="module" src="https://manav.ch/r/dist:light?<MODULE>.js"></script>
+<script async src="https://manav.ch/r/dist:light?<NAME>.js"></script>
 <!-- example: chip.js or split.js -->
 ```
 
