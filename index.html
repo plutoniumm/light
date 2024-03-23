@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    lt-split {
+      border: 1px solid #888;
+      border-radius: 10px;
+    }
+
+    html {
+      background: #fff;
+      filter: invert(1);
+    }
+  </style>
+  <script type="module" crossorigin src="/assets/index-981b6f37.js"></script>
+</head>
+
+<body>
+  <h1>Tex</h1>
+  <lt-tex display>
+    \int_0^\infty e^{-x^2} dx = \frac{\sqrt{\pi}}{2}
+  </lt-tex>
+
+
+  <h1>Chip</h1>
+  <lt-chip scale="0.8">Default Chip</lt-chip>
+  <lt-chip bg="#70f" style="font: 100 18px Helvetica;">Fancy Chip</lt-chip>
+  <lt-chip bg="#ccc">Fancy Chip</lt-chip>
+
+  <h1>Split</h1>
+  <lt-split disabled ratio="0.2:0.8" style="border-radius: 10px;">
+    <div slot="a">
+      <h1>Left</h1>
+    </div>
+    <div slot="b">
+      <lt-split vertical ratio="0.6:0.4" style="height: 300px;">
+        <div slot="a">
+          <h1>Right, Top</h1>
+        </div>
+        <div slot="b">
+          <h1>Right, Down</h1>
+        </div>
+      </lt-split>
+    </div>
+  </lt-split>
+
+  
+  
+  
+</body>
+
+</html>
