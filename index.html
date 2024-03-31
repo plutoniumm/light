@@ -20,18 +20,32 @@
 </head>
 
 <body>
-  <h1>Tex</h1>
+  <h1>Table</h1>
+  <script type="module" src="src/table.ts"></script>
+  <lt-table>
+    <script slot="data">
+      const data = [
+        { "name": "John", "age": 24, "city": "New York" },
+        { "name": "Jane", "age": 23, "city": "San Francisco" },
+        { "name": "Doe", "age": 25, "city": "Los Angeles" }
+      ]
+    </script>
+  </lt-table>
+
+  <!-- <h1>Tex</h1>
+  <script type="module" src="src/tex.ts"></script>
   <lt-tex display>
     \int_0^\infty e^{-x^2} dx = \frac{\sqrt{\pi}}{2}
-  </lt-tex>
+  </lt-tex> -->
 
-
-  <h1>Chip</h1>
+  <!-- <h1>Chip</h1>
+  <script type="module" src="src/chip.ts"></script>
   <lt-chip scale="0.8">Default Chip</lt-chip>
   <lt-chip bg="#70f" style="font: 100 18px Helvetica;">Fancy Chip</lt-chip>
-  <lt-chip bg="#ccc">Fancy Chip</lt-chip>
+  <lt-chip bg="#ccc">Fancy Chip</lt-chip> -->
 
-  <h1>Split</h1>
+  <!-- <h1>Split</h1>
+  <script type="module" src="src/split.ts"></script>
   <lt-split disabled ratio="0.2:0.8" style="border-radius: 10px;">
     <div slot="a">
       <h1>Left</h1>
@@ -46,11 +60,7 @@
         </div>
       </lt-split>
     </div>
-  </lt-split>
-
-  <script type="module" src="src/split.ts"></script>
-  <script type="module" src="src/chip.ts"></script>
-  <script type="module" src="src/tex.ts"></script>
+  </lt-split> -->
 
   <!-- <script type="module" src="src/load.ts"></script> -->
 </body>

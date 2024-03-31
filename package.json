@@ -9,9 +9,11 @@
 		"postdeploy": "rm -rf dist"
 	},
 	"dependencies": {
+		"@sveltejs/vite-plugin-svelte": "^3.0.2",
 		"@types/katex": "^0.16.7",
 		"katex": "^0.16.9",
 		"lit": "^3.1.2",
+		"svelte": "^4.2.12",
 		"vite": "^5.1.6"
 	}
 }
