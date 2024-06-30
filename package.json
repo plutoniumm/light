@@ -1,6 +1,6 @@
 {
 	"name": "light",
-	"version": "0.1.0",
+	"version": "0.2.0",
 	"type": "module",
 	"scripts": {
 		"dev": "vite dev",
@@ -13,7 +13,11 @@
 		"@types/katex": "^0.16.7",
 		"katex": "^0.16.9",
 		"lit": "^3.1.2",
+		"mermaid": "^10.9.1",
+		"preact": "^10.22.0",
+		"solid-js": "^1.8.18",
 		"svelte": "^4.2.12",
-		"vite": "^5.1.6"
+		"vite": "^5.1.6",
+		"vue": "^3.4.31"
 	}
 }

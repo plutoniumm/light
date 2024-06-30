@@ -21,6 +21,31 @@
 
 <body>
   <h1>Table</h1>
+  <script type="module" src="src/mermaid.ts"></script>
+  <lt-mmd>
+    flowchart TD;
+    A[Square Rect] -- Link text --> B((Circle));
+    A --> C(Round Rect);
+    B --> D{Rhombus};
+    C --> D;
+  </lt-mmd>
+
+  <!-- <h1>Table</h1>
+  <script type="module" src="src/frame.ts"></script>
+  <lt-frame>
+    <template>
+      <div style="display: flex;border: 1px solid blue;">
+        <div style="flex: 1;border:1px solid green;">
+          <h1>Left</h1>
+        </div>
+        <div style="flex: 1;border:1px solid red;">
+          RIGHT
+        </div>
+      </div>
+    </template>
+  </lt-frame> -->
+
+  <!-- <h1>Table</h1>
   <script type="module" src="src/table.ts"></script>
   <lt-table>
     Name, Age, Location;
@@ -28,7 +53,7 @@
     John, 24, New York;
     Jane, 23, San Francisco;
     Doe, 25, Los Angeles;
-  </lt-table>
+  </lt-table> -->
 
   <!-- <h1>Tex</h1>
   <script type="module" src="src/tex.ts"></script>

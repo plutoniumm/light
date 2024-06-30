@@ -46,3 +46,24 @@ Small sensible lit components made for one off uses.
 \end{bmatrix}
 </lt-tex>
 ```
+
+### Mermaid
+```html
+<lt-mmd>
+graph TD
+  A[Christmas] -->|Get money| B(Go shopping)
+  B --> C{Let me think}
+  C -->|One| D[Laptop]
+  C -->|Two| E[iPhone]
+  C -->|Three| F[Car]
+</lt-mmd>
+```
+
+### Frame
+```html
+<lt-frame>
+  <template>
+    <div>frame</div>
+  </template>
+</lt-frame>
+```
